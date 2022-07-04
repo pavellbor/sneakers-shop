@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<header class="page-header">
+			<a class="page-header__logo logo" href="#">
+				<img class="logo__image" src="img/logo.png" width="40" height="40" />
+				<span class="logo__title">Sneakers</span>
+				<span class="logo__desc">Магазин брендовых кроссовок</span>
+			</a>
+			<nav class="page-header__nav main-nav">
+				<a class="main-nav__link" href="#">
+					<img class="main-nav__icon" src="img/cart.svg" width="20" height="19" />
+					<span class="main-nav__text">1205 руб.</span>
+				</a>
+				<a class="main-nav__link" href="#">
+					<img class="main-nav__icon" src="img/fav.svg" width="20" height="19" />
+				</a>
+				<a class="main-nav__link" href="#">
+					<img class="main-nav__icon" src="img/user.svg" width="20" height="20" />
+				</a>
+			</nav>
+		</header>
+		<main class="page-content page-content--empty">
+			<div class="page-content__message message-block">
+				<img class="message-block__image" src="img/box.jpg" width="120" height="120">
+				<h3 class="message-block__title">Корзина пустая</h3>
+				<span class="message-block__desc">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</span>
+				<button class="message-block__button button button--back">
+					<span class="button__text">Вернуться назад</span>
+					<img class="button__icon" src="img/arrow.svg" width="14" height="12">
+				</button>
+			</div>
+		</main>
+		<div class="page-drawer drawer">
+			<div class="drawer__overlay"></div>
+			<div class="drawer__body">
+				<div class="drawer__header">
+					<h2 class="drawer__title">Корзина</h2>
+					<button class="drawer__close">
+						<img class="card__close-icon" src="img/btn-remove.svg" width="32" height="32" />
+					</button>
+				</div>
+				<div class="drawer__message message-block">
+					<img class="message-block__image" src="img/box.jpg" width="120" height="120">
+					<h3 class="message-block__title">Корзина пустая</h3>
+					<span class="message-block__desc">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</span>
+					<button class="message-block__button button button--back">
+						<span class="button__text">Вернуться назад</span>
+						<img class="button__icon" src="img/arrow.svg" width="14" height="12">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
