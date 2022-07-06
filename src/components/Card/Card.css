@@ -1,0 +1,107 @@
+.card {
+	position: relative;
+	display: grid;
+	grid-template-areas: 
+		'img img'
+		'title title'
+		'price add';
+	grid-template-columns: 1fr auto;
+	gap: 15px;
+	padding: 30px;
+	border: 1px solid #F3F3F3;
+	border-radius: 40px;
+}
+
+.card__button {
+	display: grid;
+	place-items: center;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.card__button--fav {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card__image {
+	grid-area: img;
+	width: 100%;
+}
+
+.card__title {
+	grid-area: title;
+}
+
+.card__price-block {
+	display: grid;
+	row-gap: 2px;
+	grid-area: price;
+}
+
+.card__price-label {
+	color: #BDBDBD;
+	text-transform: uppercase;
+}
+
+.card__price-value {
+	font-weight: bold;
+}
+
+.card__button--cart {
+	grid-area: add;
+}
+
+.card--cart {
+	grid-template-areas: 
+		'img title remove'
+		'img price remove';
+	grid-template-columns: 70px 1fr 32px;
+	align-items: center;
+	column-gap: 20px;
+	row-gap: 8px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.card--cart .card__button--fav {
+	display: none;
+}
+
+.card--cart .card__price-label {
+	display: none;
+}
+
+.card__button--remove {
+	grid-area: remove;
+}
+
+.card--loading .card__image {
+	width: 100%;
+	height: 124px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+.card--loading .card__title {
+	height: 32px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+.card--loading .card__price-block {
+	height: 34px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+.card--loading .card__button--cart {
+	width: 32px;
+	height: 32px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+
+.logo {
+	display: grid;
+	grid-template-areas: 
+		'img title'
+		'img desc';
+	column-gap: 15px;
+}
+
+.logo__image {
+	grid-area: img;
+	width: 40px;
+}
+
+.logo__title {
+	grid-area: title;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.logo__desc {
+	grid-area: desc;
+	color: #9D9D9D;
+}

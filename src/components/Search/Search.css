@@ -1,0 +1,22 @@
+.search {
+	display: grid;
+	grid-template-columns: 14px 1fr;
+	column-gap: 13px;
+	align-items: center;
+	box-sizing: border-box;
+	width: 250px;
+	height: 45px;
+	padding: 0 18px;
+	border: 1px solid #F3F3F3;
+	border-radius: 10px;
+}
+
+.search__field {
+	border: none;
+	font: inherit;
+	outline: none;
+}
+
+.search__field::placeholder {
+	color: #C4C4C4;
+}

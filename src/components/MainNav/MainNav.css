@@ -1,0 +1,19 @@
+.main-nav {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 30px;
+	align-items: center;
+}
+
+.main-nav__link {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 10px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.main-nav__text {
+	font-weight: bold;
+	color: #5C5C5C;
+}

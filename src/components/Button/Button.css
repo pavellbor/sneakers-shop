@@ -1,0 +1,32 @@
+.button {
+	position: relative;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	min-height: 55px;
+	padding: 15px 30px;
+	background-color: #9DD558;
+	border: none;
+	border-radius: 18px;
+}
+
+.button__text {
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.button__icon {
+	position: absolute;
+	right: 30px;
+}
+
+.button--back .button__icon {
+	right: auto;
+	left: 30px;
+	transform: scale(-1);
+}
+
+.button--disabled {
+	background: #e5e5e5;
+}

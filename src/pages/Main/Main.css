@@ -1,0 +1,31 @@
+.page-content {
+	display: grid;
+	grid-template-areas: 
+	'title search'
+	'list list';
+	grid-template-columns: 1fr auto;
+  align-content: start;
+	gap: 40px;
+	padding: 40px 60px;
+}
+
+.page-content--empty {
+	grid-template-areas: none;
+	grid-template-columns: none;
+	justify-content: center;
+}
+
+.page-content__title {
+	grid-area: title;
+	margin: 0;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.page-content__search {
+	grid-area: search;
+}
+
+.page-content__list {
+	grid-area: list;
+}
